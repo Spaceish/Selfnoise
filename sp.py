@@ -1,8 +1,8 @@
 from time import sleep
-from sys.stdout import write, flush
+import sys
 
 def slowprint(text : str):
     for char in f"{text}\n":
-        write(char)
-        flush()
+        sys.stdoutwrite(char)
+        sys.stdout.flush()
         sleep(0.1)
